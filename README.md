@@ -10,7 +10,7 @@ This is the object that actually creates the dialogue box on the view and plays 
 
 **Create**
 
-In addition to initializing various stylistic things, the Create event of obj_text creates stringPrinted, which is the dynamic string shown on the dialogue box. The speed at which the dialogue proceeds is also initialized at 3, but this can be changed. Know that this denotes the number of frames passed in the room between letter of dialogue; so since our room's speed is set to 60 FPS, this means a letter will be shown (and a sound will be played) every 3/60 seconds. Finally
+In addition to initializing various stylistic things, the Create event of obj_text creates stringPrinted, which is the dynamic string shown on the dialogue box. The speed at which the dialogue proceeds is also initialized at 3, but this can be changed. Know that this denotes the number of frames passed in the room between letter of dialogue; so since our room's speed is set to 60 FPS, this means a letter will be shown (and a sound will be played) every 3/60 seconds.
 
 ```gml
 // Initialize position and stringPrinted
