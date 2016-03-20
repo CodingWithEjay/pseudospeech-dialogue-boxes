@@ -1,7 +1,5 @@
 # Pseudospeech Dialogue Boxes
 
-## About
-
 This is a GML object + script implementation of dialogue boxes with pseudospeech. This effect can be found in games like Undertale and all of the Animal Crossing titles.
 
 ## How it Works
