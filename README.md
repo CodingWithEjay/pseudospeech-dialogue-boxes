@@ -117,5 +117,3 @@ License
 -------
 
 See `LICENSE` file.
-
-> Copyright (c) 2015-2016 Gustavo Velasquez
