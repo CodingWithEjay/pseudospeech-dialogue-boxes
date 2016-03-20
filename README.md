@@ -23,7 +23,7 @@ spd = 3;
 
 **Alarm[0]**
 
-The alarm advances stringPrinted 1 character along stringText, the full text to be displayed, at every iteration. The actual speech playing part of this event is shown in the code below. Essentially, if there is a newline or stop in stringText, the dialogue box will slow down its speed for 1 character, making for "natural" sounding breaks in the pseudospeech. If there is no newline or stop, the alarm will either begin playing the speech sound or stop the speech sound and play it anew.
+The actual speech playing part of this event is shown in the code below. Essentially, if there is a newline or stop in stringText, the dialogue box will slow down its speed for 1 character, making for "natural" sounding breaks in the pseudospeech. If there is no newline or stop, the alarm will either begin playing the speech sound or stop the speech sound and play it anew.
 
 ```gml
 // If the char at the current position is a newline or stop,
@@ -51,10 +51,6 @@ else {
   }
 }
 ```
-
-**Release X-key**
-
-This will display the entirety of the text to the screen all at once, allowing users to skip parts of conversations at will.
 
 **Release Z-key**
 
@@ -85,13 +81,13 @@ This repository includes an example that shows basic usage of the script, as wel
 
 ## Usage
 
-To use this, simply drop obj_text and scr_draw_text into your project. From there, whenever you want a user's interaction with something (e.g. a signpost) to create dialogue, make that something (e.g. the signpost) call scr_draw_text in the following manner:
+To use this, simply drop obj_text and scr_draw_text into your project. Then, create sound_speech; this will be the sound for your pseudospeech. From there, whenever you want a user's interaction with something (e.g. obj_sign) to create dialogue, make that something call scr_draw_text in the following manner:
 
 ```gml
 scr_draw_text(id, scr_sign_dialogue("example"), ds_list_size(scr_sign_dialogue("example")));
 ```
 
-where scr_draw_text contains the following:
+where scr_sign_dialogue contains the following:
 
 ```gml
 // scr_sign_dialogue
